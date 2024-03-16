@@ -1,0 +1,68 @@
+.homeBackground {
+    /* The image used */
+    background-image: url("../assets/hotelbackground.jpg");
+    
+    /* Full height */
+    height: 100%;
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Apply the blur effect only to the background */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-attachment: fixed;
+}
+
+/* Content styling (adjust as needed) */
+.homeBackground > div {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Example background color with opacity */
+}
+
+
+/* Navbar - CSS */
+/* .navBar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: rgb(252, 220, 220);
+  }
+ */
+ .logo-container {
+    width: 150px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Position for absolute child */
+  }
+
+  .logo {
+    width: 150px; /* Same as parent width */
+    height: 100px; /* Same as parent height */
+    border-radius: 90px;
+    position: absolute; /* Position absolutely */
+    animation: slide 8s linear infinite; /* Adjust duration as needed */
+  }
+
+  @keyframes slide {
+    0% {
+      left: 0;
+      border-radius: 10px;
+    }
+    20% {
+      left: calc(35% - 150px); /* Slow down the speed while moving right */
+      border-radius: 120px;
+    }
+     
+    100% {
+      left: 0;
+      border-radius: 10px;
+    } 
+  }
+
+
+  

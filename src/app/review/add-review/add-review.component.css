@@ -1,0 +1,33 @@
+.heading{
+    text-align: center;
+    text-shadow: 2px 2px rgb(140, 140, 235);
+    
+}
+.formbody{
+    padding: 40px;
+    border: solid rgb(255, 0, 0);
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right,rgb(253, 0, 0),yellow);
+    width: 60%;
+    margin: 0 auto;
+}
+
+.formbody input[type="number"],
+.formbody input[type="text"] {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px; 
+    background-color: rgb(140, 140, 235); /* Change button background color */
+    color: white; /* Change button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(100, 100, 200); /* Change button background color on hover */
+}

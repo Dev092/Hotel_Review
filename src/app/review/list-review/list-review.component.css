@@ -1,0 +1,55 @@
+.customer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.customer {
+    width: calc(50% - 10px); /* Adjust width as needed */
+    margin-bottom: 20px;
+    transition: transform 2.1s ease; /* This line */
+}
+.customer:hover {
+    transform: scale(1.06); /* Increase size on hover */
+  }
+
+.customer-details {
+    border: 1px solid #ffc400;
+    border-radius: 5px;
+    padding: 20px; /* Add padding to the customer details */
+    background-image: linear-gradient(to bottom right,rgb(255, 6, 6),rgb(255, 0, 238));
+
+}
+
+.align-left {
+    align-self: flex-start;
+}
+
+.align-right {
+    align-self: flex-end;
+}
+.royal-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #6b3e00; /* Royal brown color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    margin-top: 50px;
+}
+
+.royal-heading::after {
+    content: "";
+    display: block;
+    width: 80px; /* Adjust the width of the line */
+    margin: 10px auto; /* Center the line */
+    border-bottom: 3px solid #6b3e00; /* Royal brown color */
+}
+
+
+.royal-heading::before {
+    content: "\1F451"; /* Unicode for crown icon */
+    font-size: 48px;
+    display: block;
+    margin: 20px auto; /* Center the crown icon */
+    color: #ffd700; /* Gold color */
+}

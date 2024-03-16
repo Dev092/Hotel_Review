@@ -1,0 +1,22 @@
+{
+  "customer": [
+    {
+      "id": 101,
+      "customerName": "Ram",
+      "review": "My stay at Hotel Taj was an unforgettable experience. The opulent interiors, impeccable service, and exquisite cuisine surpassed all expectations. From the moment I arrived, I was enveloped in luxury, making every moment a cherished memory.",
+      "starRate": 4.5
+    },
+    {
+      "id": 102,
+      "customerName": "Dev",
+      "review": "Hotel Taj truly embodies the essence of hospitality. The warm welcome, stunning views, and attention to detail made my stay exceptional. Whether indulging in fine dining or unwinding in the elegant surroundings, every moment was a delight.",
+      "starRate": 3
+    },
+    {
+      "id": 103,
+      "customerName": "Shayam",
+      "review": "My stay at Hotel XYZ was disappointing. The room was unkempt, amenities were lacking, and customer service was subpar. Overall, it was a regrettable experience.",
+      "starRate": 1
+    }
+  ]
+}

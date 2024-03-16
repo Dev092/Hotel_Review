@@ -1,0 +1,38 @@
+<h1 class="heading">Fill the form to add review about ABC Hotel.</h1>
+<div class="formbody">
+<form (ngSubmit)="addHandler(f)" #f="ngForm">
+    <div>
+        
+        <div style="font-weight: bold;font-size: 30px;">Customer Id
+        <input type="number" name="id" ngModel required></div>
+
+        <div style="font-weight: bold;font-size: 30px;">Customer Name
+       <input type="text" name="customerName" ngModel required></div>
+
+        <div style="font-weight: bold;font-size: 30px;">Customer Review
+        <input type="text" name="review" ngModel required></div>
+
+        <div style="font-weight: bold;font-size: 30px;">Star Rating
+        <input type="number" name="starRate" ngModel required></div>
+
+     
+
+        
+    </div>
+    <div>
+        <button type="submit" [disabled]="f.invalid">Add Review!</button>
+    </div>
+
+</form>
+</div>
+
+<!-- <form>
+    <label for="imageInput">Upload Image:</label>
+    <input type="file" id="imageInput" name="image" accept="image/*" (change)="onFileSelected($event)">
+    <button type="submit">Submit</button>
+  </form>
+  
+  <div id="imagePreviewContainer">
+    <img id="imagePreview" [src]="imageUrl" alt="Image Preview">
+  </div>
+   -->

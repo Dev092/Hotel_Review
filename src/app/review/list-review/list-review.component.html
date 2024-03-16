@@ -1,0 +1,17 @@
+<h1 class="royal-heading">Hotel Taj</h1>
+<div class="customer-container" *ngIf="customer.length > 0; else noCustomer">
+    <div class="customer" *ngFor="let c of customer; let i = index" [class.align-left]="i % 2 === 0" [class.align-right]="i % 2 !== 0">
+        
+        <div class="customer-details">
+            <img class="f" src="../assets/logo.png" alt="user" width="60px" style="border-radius: 26px;">
+            <p><strong>Customer Id:</strong> {{c.id}}</p>
+            <p><strong>Customer Name:</strong> {{c.customerName | uppercase}}</p>
+            <p><strong>Review:</strong> {{c.review}}</p>
+            <p><strong>Star Rating out of 5:</strong> {{c.starRate}}</p>
+        </div>
+        
+    </div>
+</div>
+<ng-template #noCustomer>
+    <p>No Customer reviews available...</p>
+</ng-template>
